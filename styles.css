@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: url('src/image7.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 553px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header__menu-item--logo {
+    margin-right: auto;
+}
+
+.header__menu-item {
+    margin-left: 20px;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.header__title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header__description-wrapper {
+    display: flex; /* Используем Flexbox */
+    flex-wrap: wrap; /* Позволяет элементам переноситься */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    width: 100%;
+    gap: 21px; /* Расстояние между элементами */
+}
+
+.header__description {
+    width: 334px;
+    margin: 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: #fff;
+}
+
+.header__button {
+    align-self: flex-end;
+    background: #dae8f6;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #000;
+    padding-left: 119px;
+    padding-right: 119px;
+    padding-top: 20.5px;
+    padding-bottom: 20.5px;
+    margin-left: auto;
+    width: auto; /* Устанавливаем авто ширину для кнопки */
+}
+
+/* Адаптивность: экраны шире 768px */
+@media screen and (max-width: 768px) {
+    .header__content {
+        flex-direction: column; /* Располагаем элементы вертикально */
+        align-items: flex-start; /* Выравнивание элементов по левому краю */
+    }
+
+    .header__description-wrapper {
+        flex-direction: column; /* Параграфы идут вертикально */
+        gap: 15px; /* Меньше расстояние между параграфами */
+    }
+
+    .header__description {
+        width: 100%; /* Параграфы занимают всю ширину */
+        font-size: 14px; /* Уменьшаем размер текста */
+    }
+
+    .header__button {
+        width: 100%; /* Кнопка будет занимать всю ширину на маленьких экранах */
+        margin-left: 0; /* Убираем отступ слева */
+    }
+}
+
+/* Адаптивность для мобильных экранов (например, 480px) */
+@media screen and (max-width: 480px) {
+    .header__button {
+        font-size: 14px; /* Меньший размер кнопки */
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

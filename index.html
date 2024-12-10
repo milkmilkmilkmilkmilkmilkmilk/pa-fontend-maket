@@ -3,113 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>CLAIM</title>
 </head>
 <body>
     <header class="header">
-        <div class="nav">
-            <ul class="ul">
-                <li class="li">
-                    CLAIM
-                </li>
-                <li class="li">
-                    О КОМПАНИИ
-                </li >
-                <li class="li">
-                    УСЛУГИ
-                </li>
-                <li class="li">
-                    ПАРТНЕРЫ
-                </li>
-                <li class="li">
-                    ОТЗЫВЫ
-                </li>
-                <li class="li">
-                    КОНТАКТЫ
-                </li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item header__menu-item--logo">CLAIM</li>
+                <li class="header__menu-item">О КОМПАНИИ</li>
+                <li class="header__menu-item">УСЛУГИ</li>
+                <li class="header__menu-item">ПАРТНЕРЫ</li>
+                <li class="header__menu-item">ОТЗЫВЫ</li>
+                <li class="header__menu-item">КОНТАКТЫ</li>
             </ul>
-        </div>
-        <div class="text">
-            <h1 class="description">ПРОФЕССИОНАЛЬНЫЕ КОНСАЛТИНГОВЫЕ УСЛУГИ В ОБРАЗОВАНИИ</h1>
-            <p class="description-1">В нашу компетенцию входят архитектурно-градостроительные концепции, комплексные системы навигации и  дизайн-код территорий.</p>
-            <p class="description-2">Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.</p>
-            <button class="button">ПОДРОБНЕЕ</button>
+        </nav>
+        <div class="header__content">
+            <h1 class="header__title">Профессиональные консалтинговые <br>услуги в образовании</h1>
+            <div class="header__description-wrapper">
+                <p class="header__description">В нашу компетенцию входят архитектурно-градостроительные концепции, комплексные системы навигации и дизайн-код территорий.</p>
+                <p class="header__description">Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках 
+                подрядчиков и налаживании коммуникаций.</p>
+                <button class="header__button">ПОДРОБНЕЕ</button>   
+            </div>
+            
         </div>
     </header>
 
-    <div class="section-1">
-        <h2>О компании</h2>
-        <p>Мы сотрудничаем с отделами комплектации и строительства при создании дизайн-проекта. 
-            Благодаря этому мы учитываем и дизайн, и технологические аспекты. Это обеспечивает детальную проработку вашего проекта
+    <section class="about">
+        <h2 class="about__title">О компании</h2>
+        <p class="about__text">Мы сотрудничаем с отделами комплектации и строительства при создании дизайн-проекта. 
+            Благодаря этому мы учитываем и дизайн, и технологические аспекты. Это обеспечивает детальную проработку вашего проекта.
         </p>
-        <p>
-            100 000  м2
-        </p>
-        <p>
-            площадь реализованных проектов
-        </p>
-        <p>
-            10 лет
-        </p>
-        <p>
-            опыт работы в сфере
-        </p>
-        <p>
-            700 этажей
-        </p>
-        <p>
-            навигации
-        </p>
-    </div>
-    <div class="section-2">
-        <h2>Что мы можем вам предложить?</h2>
-        <p>
-            Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.
-        </p>
-    </div>
-    <div class="section-3">
-        <h2>Наши партнеры</h2>
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
-        <img class="img" src="" alt="">
+        <div class="about__stats">
+            <p class="about__stat">100 000 м²</p>
+            <p class="about__stat">площадь реализованных проектов</p>
+            <p class="about__stat">10 лет</p>
+            <p class="about__stat">опыт работы в сфере</p>
+            <p class="about__stat">700 этажей</p>
+            <p class="about__stat">навигации</p>
+        </div>
+    </section>
 
-    </div>
-    <div class="section-4">
-        <h2>Отзывы</h2>
-        <p>
-            Олег Джугашвили
-        </p>
-        <p>
-            СЕО АВИТО
-        </p>
-        <p>
-            Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций. 
-            Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций. 
-            Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.
-        </p>
+    <section class="services">
+        <h2 class="services__title">Что мы можем вам предложить?</h2>
+        <p class="services__text">Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.</p>
+    </section>
 
-        <p>
-            Олег Джугашвили
+    <section class="partners">
+        <h2 class="partners__title">Наши партнеры</h2>
+        <div class="partners__list">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+            <img class="partners__image" src="" alt="">
+        </div>
+    </section>
 
-        </p>
-        <p>
-            СЕО АВИТО
-        </p>
-        <p>
-            Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.
-             Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций. 
-             ы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций. 
-             и поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.
-             Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах, поэтому снимем с вас головную боль в поисках подрядчиков и налаживании коммуникаций.
-        </p>
-        <button><-</button>
-        <button>-></button>
-    </div>
+    <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div class="reviews__list">
+            <article class="reviews__item">
+                <p class="reviews__author">Олег Джугашвили</p>
+                <p class="reviews__position">СЕО АВИТО</p>
+                <p class="reviews__text">Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах...</p>
+            </article>
+            <article class="reviews__item">
+                <p class="reviews__author">Олег Джугашвили</p>
+                <p class="reviews__position">СЕО АВИТО</p>
+                <p class="reviews__text">Мы сотрудничаем с надежными поставщиками и разбираемся в комплексных проектах...</p>
+            </article>
+        </div>
+        <div class="reviews__controls">
+            <button class="reviews__button reviews__button--prev"><-</button>
+            <button class="reviews__button reviews__button--next">-></button>
+        </div>
+    </section>
 </body>
 </html>
