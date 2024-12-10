@@ -26,7 +26,7 @@ body {
 .header__nav {
     display: flex;
     align-items: center;
-    margin-bottom: 553px;
+    margin-bottom: 600px;
 }
 
 .header__menu {
@@ -51,7 +51,7 @@ body {
 .header__content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -64,6 +64,8 @@ body {
     letter-spacing: -0.06em;
     text-transform: uppercase;
     color: #fff;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .header__description-wrapper {
@@ -102,6 +104,10 @@ body {
     padding-bottom: 20.5px;
     margin-left: auto;
     width: auto; /* Устанавливаем авто ширину для кнопки */
+}
+
+.about{
+    margin-top: 160px;
 }
 
 /* Адаптивность: экраны шире 768px */
