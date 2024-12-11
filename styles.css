@@ -1,4 +1,7 @@
-*,
+*{
+    margin: 0;
+    padding: 0;
+}
 *::before,
 *::after {
     box-sizing: border-box;
@@ -69,11 +72,11 @@ body {
 }
 
 .header__description-wrapper {
-    display: flex; /* Используем Flexbox */
-    flex-wrap: wrap; /* Позволяет элементам переноситься */
-    align-items: flex-start; /* Выравнивание по верхнему краю */
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: flex-start; 
     width: 100%;
-    gap: 21px; /* Расстояние между элементами */
+    gap: 21px; 
 }
 
 .header__description {
@@ -103,40 +106,179 @@ body {
     padding-top: 20.5px;
     padding-bottom: 20.5px;
     margin-left: auto;
-    width: auto; /* Устанавливаем авто ширину для кнопки */
+    width: auto;
 }
-
-.about{
+/*
+О Компании
+*/
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
     margin-top: 160px;
-}
+    margin-left: 20px;
+  }
+  
+  .about__title h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    color: #000;
+  }
+  
+  .about__content {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 270px;
+    margin-right: 20px;
+  }
 
-/* Адаптивность: экраны шире 768px */
+  .about__content p{
+    margin-bottom: 40px;
+  }
+  
+  .about__stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    margin: 0;
+    gap: 36px;
+  }
+  
+  .about__stats > div:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .about__stats div{
+    display: flex;
+    flex-direction: column; 
+    align-items: start; 
+  }
+  
+  
+  
+  .stat-number {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    color: #000;
+  }
+
+  /*
+  Что мы можем предложить
+  */
+
+  .offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  .offer__intro h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .offer__intro p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: #040404;
+    max-width: 335px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  .offer__list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .offer__list li {
+    display: flex; 
+    align-items: baseline;
+    margin-bottom: 30px;
+    padding-top: 6px;
+    border-top: 1px solid #000;
+  }
+  
+  .offer-number {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    color: #000;
+    margin-right: 318px; 
+    text-align: right; 
+  }
+  
+  .offer-value {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #000;
+    text-align: left;
+  }
+  
+  
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .header__content {
-        flex-direction: column; /* Располагаем элементы вертикально */
-        align-items: flex-start; /* Выравнивание элементов по левому краю */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .header__description-wrapper {
-        flex-direction: column; /* Параграфы идут вертикально */
-        gap: 15px; /* Меньше расстояние между параграфами */
+        flex-direction: column; 
+        gap: 15px; 
     }
 
     .header__description {
-        width: 100%; /* Параграфы занимают всю ширину */
-        font-size: 14px; /* Уменьшаем размер текста */
+        width: 100%; 
+        font-size: 14px; 
     }
 
     .header__button {
-        width: 100%; /* Кнопка будет занимать всю ширину на маленьких экранах */
-        margin-left: 0; /* Убираем отступ слева */
+        width: 100%; 
+        margin-left: 0; 
     }
 }
 
-/* Адаптивность для мобильных экранов (например, 480px) */
+
 @media screen and (max-width: 480px) {
     .header__button {
-        font-size: 14px; /* Меньший размер кнопки */
+        font-size: 14px; 
         padding-left: 40px;
         padding-right: 40px;
     }
