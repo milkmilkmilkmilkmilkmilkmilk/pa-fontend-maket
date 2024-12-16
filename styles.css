@@ -717,6 +717,64 @@ text-decoration: underline;
 
 
 /* Начало медиазапроса для мобильных устройств */
+/* Большие мобильные устройства (425px) */
+@media (max-width: 425px) {
+  .header__title {
+    font-size: 24px;
+  }
+
+  .header__button {
+    padding: 10px;
+  }
+
+  .about__stats {
+    font-size: 14px;
+  }
+}
+
+/* Средние мобильные устройства (375px) */
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 20px;
+  }
+
+  .header__description {
+    font-size: 14px;
+  }
+
+  .about__content {
+    font-size: 14px;
+  }
+
+  .footer__claim {
+    font-size: 18px;
+  }
+}
+
+/* Маленькие мобильные устройства (320px) */
+@media (max-width: 320px) {
+  .header__title {
+    font-size: 16px;
+  }
+
+  .header__description {
+    font-size: 12px;
+  }
+
+  .header__button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .about__stats {
+    font-size: 12px;
+  }
+
+  .footer__claim {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   /* Общие стили */
   body {
@@ -915,3 +973,4 @@ text-decoration: underline;
     text-align: center;
   }
 }
+
