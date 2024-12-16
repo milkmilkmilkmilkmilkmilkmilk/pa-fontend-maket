@@ -721,41 +721,45 @@ text-decoration: underline;
   /* Общие стили */
   body {
     padding: 0;
+    margin: 0;
   }
 
-  /* Заголовок */
-  .header {
-    height: auto;
-    padding: 20px;
-  }
-
-  .header__menu {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .header__title {
-    font-size: 36px;
-    line-height: 120%;
-    text-align: center;
-  }
-
-  .header__description-wrapper {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .header__description {
-    width: 100%;
-    text-align: center;
-  }
-
-  .header__button {
-    padding: 15px 20px;
-    width: 100%;
-    text-align: center;
-  }
+    /* Заголовок */
+    .header {
+      height: auto;
+      padding: 20px;
+      overflow: hidden;
+    }
+  
+    .header__menu {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .header__title {
+      font-size: 28px;
+      line-height: 130%;
+      text-align: center;
+      word-wrap: break-word;
+      margin: 0 10px;
+    }
+  
+    .header__description-wrapper {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .header__description {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .header__button {
+      padding: 15px 20px;
+      width: 100%;
+      text-align: center;
+    }
 
   /* О Компании */
   .about {
